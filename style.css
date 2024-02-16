@@ -1,0 +1,278 @@
+:root {
+    --FuenteHeading: 'Futura Condensed';
+    --FuenteParrafo: 'Helvetica', sans-serif;
+    --FuenteExtra: 'Poppins', sans-serif;
+    --colorPrincipal: #000;
+    --colorSecundario: #fff;
+    --colorTerciario: #004B23;
+    --colorExtra: #ff8000;
+
+}
+
+@font-face {
+    font-family: 'Futura Condensed';
+    src: url(font/Nike-Font/Futura\ Condensed\ Extra\ Bold.otf);
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+}
+
+img {
+    width: 100%;
+    
+}
+
+
+.content_header {
+    
+    /* max-width: 120rem; */
+    width: auto;
+    /* margin-top: 10px; */
+    position: sticky;
+    z-index: 1000;
+    padding: 15px 20px 5px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border-bottom: 1px solid #e1e1e1;
+    box-shadow: 0px 4px 3px 0 #504e4e37;
+}
+
+form {
+    position: relative;
+    
+}
+
+input {
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+    font-size: 20px;
+    padding-right: 10px;
+    padding-left: 52px;
+    box-shadow: 1px 3px 0 0 #1415143c, 4px 8px 6px 0 #1e201db1;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+i {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    background-color: #1415143c;
+    color: #fff;
+    padding: 3.8px;
+    border-radius: 50%;
+}
+
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #080808;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    
+}
+.nav_enlace {
+    list-style: none;
+    padding: 10px;
+    
+}
+
+.nav_enlace a{
+    text-decoration: none;
+    color: var(--colorPrincipal);
+    display: block
+}
+
+#menu {
+    display: none;
+}
+
+.content_header label {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .content_header {
+        padding: 20px;
+    }
+
+    .content_header label {
+        display: initial;
+        font-family: 'poppins', sans-serif;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        width:  100vh;
+        height: 25rem;
+        right: 0;
+        color: #100606;
+        text-align: center;
+        /* padding: 10px; */
+        backdrop-filter: blur(50px);
+        display: none;
+    }
+
+    .nav_enlace {
+        display: block;
+        gap: 20px;
+        border-bottom: #10060640 solid 1px;
+        padding-bottom: 15px;
+        margin-top: 25px;
+        
+    }
+    
+    li.nav_enlace {
+        gap: 50px;
+        margin-bottom: 47px;
+    }
+
+    .nav_enlace a {
+        font-family: 'poppins', sans-serif;
+    }
+
+    .nav_enlace:last-of-type{
+        border: none;
+        margin-bottom: 0;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    
+}
+
+.logo_img {
+    
+    width: 50px;
+    height: 50px;
+}
+
+.img_header {
+    width: 100%;
+}
+
+@media (max-width: 768px){
+h1.title_h1 {
+    font-size: 2.8rem;
+    letter-spacing: -2px;
+}
+}
+
+@media (max-width: 500px){
+    h1.title_h1 {
+        font-size: 2rem;
+        letter-spacing: -2px;
+    }
+    }
+
+.title {
+    /* background: brown; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 15px;
+
+}
+
+.title_h1 {
+    font-family: 'Futura Condensed', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+}
+
+/*& ---------- SECTION 01 ---------- */
+
+.contenedor {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+}
+
+@media (max-width: 768px){
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .preview {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+.preview {
+    
+    /* height: 80rem; */
+    max-width: 200rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.section_1 {
+    /* background: dodgerblue; */
+    
+}
+
+.section1_img {
+    /* background: bisque; */
+    
+    /* height: auto; */
+}
+
+.img_section1{
+    background: red;
+    
+}
+
+.text_title {
+    
+    text-align: center;
+    font-size: 2rem;
+    font-family: var(--FuenteHeading);
+    text-transform: uppercase;
+}
+
+/*& ---------- Slider ---------- */
+
